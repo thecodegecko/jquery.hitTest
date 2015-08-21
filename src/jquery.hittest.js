@@ -2,7 +2,7 @@ var enableLog = true;
 function log(msg){
 	if(enableLog || typeof console!=="undefined")
 	{
-		console.log(msg)
+		console.log(msg);
 	}
 }
 $(document).ready(function(){
