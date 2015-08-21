@@ -1,0 +1,31 @@
+html { height: 100%; }
+
+body { min-height: 100%; padding: 25px; }
+
+#pageWrap:before, #pageWrap:after { content: ''; position: fixed; background: #CCCCCC; left: 0; top: 0; }
+
+#pageWrap:before { width: 50px; height: 100%; left: 50%; margin-left: -25px; background: #00FF00; }
+
+#pageWrap:after { height: 50px; width: 100%; top: 50%; margin-top: -25px; background: #FF0000; }
+
+.hitter { position: fixed; top: 0; left: 0; z-index: 20; margin-left: -25px; margin-top: -25px; display: block; }
+
+.hitter svg { display: block; }
+
+.x-hitter { top: 25px; left: 50%; }
+
+.y-hitter { top: 50%; left: 25px; }
+
+.xy-hitter { top: 50%; left: 50%; }
+
+.target { position: absolute; width: 40%; height: 40%; background: #CCCCCC; z-index: 0; right: 30px; bottom: 30px; padding: 15px; border: #000000 1px solid; font-weight: bold; z-index: 10; }
+
+.target:hover { cursor: move; }
+
+.target.tcg-hitting-x { background: #00FF00; }
+
+.target.tcg-hitting-y { background: #FF0000; }
+
+.target.tcg-hitting-x.tcg-hitting-y { background: #FFFF00; }
+
+/*# sourceMappingURL=jquery.hittest.css.map */
